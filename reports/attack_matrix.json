@@ -1,0 +1,587 @@
+[
+  {
+    "scenario": "valid_transaction",
+    "variant": "session_only",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "SESSION_APPROVED_NO_EFFECT_CHECK",
+    "expected": "ALLOW",
+    "correct": true
+  },
+  {
+    "scenario": "valid_transaction",
+    "variant": "upstream_only",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "UPSTREAM_CHECK_ONLY",
+    "expected": "ALLOW",
+    "correct": true
+  },
+  {
+    "scenario": "valid_transaction",
+    "variant": "candidate_checked_then_mutated",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "SINK_COMMITTED_MATCHING_OPERATION",
+    "expected": "ALLOW",
+    "correct": true
+  },
+  {
+    "scenario": "valid_transaction",
+    "variant": "native_atomic_resource",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "RESOURCE_ATOMIC_NATIVE_ALLOW",
+    "expected": "ALLOW",
+    "correct": true
+  },
+  {
+    "scenario": "valid_transaction",
+    "variant": "sink_guard",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "SINK_COMMITTED_MATCHING_OPERATION",
+    "expected": "ALLOW",
+    "correct": true
+  },
+  {
+    "scenario": "beneficiary_substitution",
+    "variant": "session_only",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "SESSION_APPROVED_NO_EFFECT_CHECK",
+    "expected": "DENY",
+    "correct": false
+  },
+  {
+    "scenario": "beneficiary_substitution",
+    "variant": "upstream_only",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "UPSTREAM_CHECK_ONLY",
+    "expected": "DENY",
+    "correct": false
+  },
+  {
+    "scenario": "beneficiary_substitution",
+    "variant": "candidate_checked_then_mutated",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "SINK_COMMITTED_MATCHING_OPERATION",
+    "expected": "DENY",
+    "correct": false
+  },
+  {
+    "scenario": "beneficiary_substitution",
+    "variant": "native_atomic_resource",
+    "decision": "DENY",
+    "mock_effects": 0,
+    "reason": "RESOURCE_ACTUAL_OPERATION_MISMATCH",
+    "expected": "DENY",
+    "correct": true
+  },
+  {
+    "scenario": "beneficiary_substitution",
+    "variant": "sink_guard",
+    "decision": "DENY",
+    "mock_effects": 0,
+    "reason": "ACTUAL_OPERATION_MISMATCH",
+    "expected": "DENY",
+    "correct": true
+  },
+  {
+    "scenario": "amount_inflation",
+    "variant": "session_only",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "SESSION_APPROVED_NO_EFFECT_CHECK",
+    "expected": "DENY",
+    "correct": false
+  },
+  {
+    "scenario": "amount_inflation",
+    "variant": "upstream_only",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "UPSTREAM_CHECK_ONLY",
+    "expected": "DENY",
+    "correct": false
+  },
+  {
+    "scenario": "amount_inflation",
+    "variant": "candidate_checked_then_mutated",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "SINK_COMMITTED_MATCHING_OPERATION",
+    "expected": "DENY",
+    "correct": false
+  },
+  {
+    "scenario": "amount_inflation",
+    "variant": "native_atomic_resource",
+    "decision": "DENY",
+    "mock_effects": 0,
+    "reason": "RESOURCE_ACTUAL_OPERATION_MISMATCH",
+    "expected": "DENY",
+    "correct": true
+  },
+  {
+    "scenario": "amount_inflation",
+    "variant": "sink_guard",
+    "decision": "DENY",
+    "mock_effects": 0,
+    "reason": "ACTUAL_OPERATION_MISMATCH",
+    "expected": "DENY",
+    "correct": true
+  },
+  {
+    "scenario": "currency_substitution",
+    "variant": "session_only",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "SESSION_APPROVED_NO_EFFECT_CHECK",
+    "expected": "DENY",
+    "correct": false
+  },
+  {
+    "scenario": "currency_substitution",
+    "variant": "upstream_only",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "UPSTREAM_CHECK_ONLY",
+    "expected": "DENY",
+    "correct": false
+  },
+  {
+    "scenario": "currency_substitution",
+    "variant": "candidate_checked_then_mutated",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "SINK_COMMITTED_MATCHING_OPERATION",
+    "expected": "DENY",
+    "correct": false
+  },
+  {
+    "scenario": "currency_substitution",
+    "variant": "native_atomic_resource",
+    "decision": "DENY",
+    "mock_effects": 0,
+    "reason": "RESOURCE_ACTUAL_OPERATION_MISMATCH",
+    "expected": "DENY",
+    "correct": true
+  },
+  {
+    "scenario": "currency_substitution",
+    "variant": "sink_guard",
+    "decision": "DENY",
+    "mock_effects": 0,
+    "reason": "ACTUAL_OPERATION_MISMATCH",
+    "expected": "DENY",
+    "correct": true
+  },
+  {
+    "scenario": "booking_substitution",
+    "variant": "session_only",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "SESSION_APPROVED_NO_EFFECT_CHECK",
+    "expected": "DENY",
+    "correct": false
+  },
+  {
+    "scenario": "booking_substitution",
+    "variant": "upstream_only",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "UPSTREAM_CHECK_ONLY",
+    "expected": "DENY",
+    "correct": false
+  },
+  {
+    "scenario": "booking_substitution",
+    "variant": "candidate_checked_then_mutated",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "SINK_COMMITTED_MATCHING_OPERATION",
+    "expected": "DENY",
+    "correct": false
+  },
+  {
+    "scenario": "booking_substitution",
+    "variant": "native_atomic_resource",
+    "decision": "DENY",
+    "mock_effects": 0,
+    "reason": "RESOURCE_ACTUAL_OPERATION_MISMATCH",
+    "expected": "DENY",
+    "correct": true
+  },
+  {
+    "scenario": "booking_substitution",
+    "variant": "sink_guard",
+    "decision": "DENY",
+    "mock_effects": 0,
+    "reason": "CONTEXT_CHANGED",
+    "expected": "DENY",
+    "correct": true
+  },
+  {
+    "scenario": "property_substitution",
+    "variant": "session_only",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "SESSION_APPROVED_NO_EFFECT_CHECK",
+    "expected": "DENY",
+    "correct": false
+  },
+  {
+    "scenario": "property_substitution",
+    "variant": "upstream_only",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "UPSTREAM_CHECK_ONLY",
+    "expected": "DENY",
+    "correct": false
+  },
+  {
+    "scenario": "property_substitution",
+    "variant": "candidate_checked_then_mutated",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "SINK_COMMITTED_MATCHING_OPERATION",
+    "expected": "DENY",
+    "correct": false
+  },
+  {
+    "scenario": "property_substitution",
+    "variant": "native_atomic_resource",
+    "decision": "DENY",
+    "mock_effects": 0,
+    "reason": "RESOURCE_ACTUAL_OPERATION_MISMATCH",
+    "expected": "DENY",
+    "correct": true
+  },
+  {
+    "scenario": "property_substitution",
+    "variant": "sink_guard",
+    "decision": "DENY",
+    "mock_effects": 0,
+    "reason": "CONTEXT_CHANGED",
+    "expected": "DENY",
+    "correct": true
+  },
+  {
+    "scenario": "actor_substitution",
+    "variant": "session_only",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "SESSION_APPROVED_NO_EFFECT_CHECK",
+    "expected": "DENY",
+    "correct": false
+  },
+  {
+    "scenario": "actor_substitution",
+    "variant": "upstream_only",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "UPSTREAM_CHECK_ONLY",
+    "expected": "DENY",
+    "correct": false
+  },
+  {
+    "scenario": "actor_substitution",
+    "variant": "candidate_checked_then_mutated",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "SINK_COMMITTED_MATCHING_OPERATION",
+    "expected": "DENY",
+    "correct": false
+  },
+  {
+    "scenario": "actor_substitution",
+    "variant": "native_atomic_resource",
+    "decision": "DENY",
+    "mock_effects": 0,
+    "reason": "RESOURCE_ACTUAL_OPERATION_MISMATCH",
+    "expected": "DENY",
+    "correct": true
+  },
+  {
+    "scenario": "actor_substitution",
+    "variant": "sink_guard",
+    "decision": "DENY",
+    "mock_effects": 0,
+    "reason": "CONTEXT_CHANGED",
+    "expected": "DENY",
+    "correct": true
+  },
+  {
+    "scenario": "operation_id_substitution",
+    "variant": "session_only",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "SESSION_APPROVED_NO_EFFECT_CHECK",
+    "expected": "DENY",
+    "correct": false
+  },
+  {
+    "scenario": "operation_id_substitution",
+    "variant": "upstream_only",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "UPSTREAM_CHECK_ONLY",
+    "expected": "DENY",
+    "correct": false
+  },
+  {
+    "scenario": "operation_id_substitution",
+    "variant": "candidate_checked_then_mutated",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "SINK_COMMITTED_MATCHING_OPERATION",
+    "expected": "DENY",
+    "correct": false
+  },
+  {
+    "scenario": "operation_id_substitution",
+    "variant": "native_atomic_resource",
+    "decision": "DENY",
+    "mock_effects": 0,
+    "reason": "RESOURCE_ACTUAL_OPERATION_MISMATCH",
+    "expected": "DENY",
+    "correct": true
+  },
+  {
+    "scenario": "operation_id_substitution",
+    "variant": "sink_guard",
+    "decision": "DENY",
+    "mock_effects": 0,
+    "reason": "ACTUAL_OPERATION_MISMATCH",
+    "expected": "DENY",
+    "correct": true
+  },
+  {
+    "scenario": "alternate_route",
+    "variant": "session_only",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "SESSION_APPROVED_NO_EFFECT_CHECK",
+    "expected": "DENY",
+    "correct": false
+  },
+  {
+    "scenario": "alternate_route",
+    "variant": "upstream_only",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "UPSTREAM_CHECK_ONLY",
+    "expected": "DENY",
+    "correct": false
+  },
+  {
+    "scenario": "alternate_route",
+    "variant": "candidate_checked_then_mutated",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "SINK_COMMITTED_MATCHING_OPERATION",
+    "expected": "DENY",
+    "correct": false
+  },
+  {
+    "scenario": "alternate_route",
+    "variant": "native_atomic_resource",
+    "decision": "DENY",
+    "mock_effects": 0,
+    "reason": "RESOURCE_ACTUAL_OPERATION_MISMATCH",
+    "expected": "DENY",
+    "correct": true
+  },
+  {
+    "scenario": "alternate_route",
+    "variant": "sink_guard",
+    "decision": "DENY",
+    "mock_effects": 0,
+    "reason": "ACTUAL_OPERATION_MISMATCH",
+    "expected": "DENY",
+    "correct": true
+  },
+  {
+    "scenario": "revoked_after_approval",
+    "variant": "session_only",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "SESSION_APPROVED_NO_EFFECT_CHECK",
+    "expected": "DENY",
+    "correct": false
+  },
+  {
+    "scenario": "revoked_after_approval",
+    "variant": "upstream_only",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "UPSTREAM_CHECK_ONLY",
+    "expected": "DENY",
+    "correct": false
+  },
+  {
+    "scenario": "revoked_after_approval",
+    "variant": "candidate_checked_then_mutated",
+    "decision": "DENY",
+    "mock_effects": 0,
+    "reason": "REVOKED",
+    "expected": "DENY",
+    "correct": true
+  },
+  {
+    "scenario": "revoked_after_approval",
+    "variant": "native_atomic_resource",
+    "decision": "DENY",
+    "mock_effects": 0,
+    "reason": "RESOURCE_STALE_AUTHORITY",
+    "expected": "DENY",
+    "correct": true
+  },
+  {
+    "scenario": "revoked_after_approval",
+    "variant": "sink_guard",
+    "decision": "DENY",
+    "mock_effects": 0,
+    "reason": "REVOKED",
+    "expected": "DENY",
+    "correct": true
+  },
+  {
+    "scenario": "policy_changed_after_approval",
+    "variant": "session_only",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "SESSION_APPROVED_NO_EFFECT_CHECK",
+    "expected": "DENY",
+    "correct": false
+  },
+  {
+    "scenario": "policy_changed_after_approval",
+    "variant": "upstream_only",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "UPSTREAM_CHECK_ONLY",
+    "expected": "DENY",
+    "correct": false
+  },
+  {
+    "scenario": "policy_changed_after_approval",
+    "variant": "candidate_checked_then_mutated",
+    "decision": "DENY",
+    "mock_effects": 0,
+    "reason": "POLICY_CHANGED",
+    "expected": "DENY",
+    "correct": true
+  },
+  {
+    "scenario": "policy_changed_after_approval",
+    "variant": "native_atomic_resource",
+    "decision": "DENY",
+    "mock_effects": 0,
+    "reason": "RESOURCE_STALE_AUTHORITY",
+    "expected": "DENY",
+    "correct": true
+  },
+  {
+    "scenario": "policy_changed_after_approval",
+    "variant": "sink_guard",
+    "decision": "DENY",
+    "mock_effects": 0,
+    "reason": "POLICY_CHANGED",
+    "expected": "DENY",
+    "correct": true
+  },
+  {
+    "scenario": "expired_approval",
+    "variant": "session_only",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "SESSION_APPROVED_NO_EFFECT_CHECK",
+    "expected": "DENY",
+    "correct": false
+  },
+  {
+    "scenario": "expired_approval",
+    "variant": "upstream_only",
+    "decision": "ALLOW",
+    "mock_effects": 1,
+    "reason": "UPSTREAM_CHECK_ONLY",
+    "expected": "DENY",
+    "correct": false
+  },
+  {
+    "scenario": "expired_approval",
+    "variant": "candidate_checked_then_mutated",
+    "decision": "DENY",
+    "mock_effects": 0,
+    "reason": "EXPIRED",
+    "expected": "DENY",
+    "correct": true
+  },
+  {
+    "scenario": "expired_approval",
+    "variant": "native_atomic_resource",
+    "decision": "DENY",
+    "mock_effects": 0,
+    "reason": "RESOURCE_EXPIRED",
+    "expected": "DENY",
+    "correct": true
+  },
+  {
+    "scenario": "expired_approval",
+    "variant": "sink_guard",
+    "decision": "DENY",
+    "mock_effects": 0,
+    "reason": "EXPIRED",
+    "expected": "DENY",
+    "correct": true
+  },
+  {
+    "scenario": "replay_same_authorization",
+    "variant": "session_only",
+    "decision": "ALLOW",
+    "mock_effects": 2,
+    "reason": "SESSION_APPROVED_NO_EFFECT_CHECK",
+    "expected": "DENY",
+    "correct": false
+  },
+  {
+    "scenario": "replay_same_authorization",
+    "variant": "upstream_only",
+    "decision": "ALLOW",
+    "mock_effects": 2,
+    "reason": "UPSTREAM_CHECK_ONLY",
+    "expected": "DENY",
+    "correct": false
+  },
+  {
+    "scenario": "replay_same_authorization",
+    "variant": "candidate_checked_then_mutated",
+    "decision": "DENY",
+    "mock_effects": 1,
+    "reason": "REPLAY_OR_PREVIOUS_DENIAL",
+    "expected": "DENY",
+    "correct": true
+  },
+  {
+    "scenario": "replay_same_authorization",
+    "variant": "native_atomic_resource",
+    "decision": "DENY",
+    "mock_effects": 1,
+    "reason": "RESOURCE_REPLAY",
+    "expected": "DENY",
+    "correct": true
+  },
+  {
+    "scenario": "replay_same_authorization",
+    "variant": "sink_guard",
+    "decision": "DENY",
+    "mock_effects": 1,
+    "reason": "REPLAY_OR_PREVIOUS_DENIAL",
+    "expected": "DENY",
+    "correct": true
+  }
+]

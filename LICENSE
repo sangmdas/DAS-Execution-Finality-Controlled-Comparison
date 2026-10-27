@@ -1,0 +1,119 @@
+DAS EXECUTION FINALITY — CONTROLLED PAYMENT AUTHORIZATION COMPARISON
+NON-COMMERCIAL RESEARCH AND EVALUATION LICENSE — VERSION 1.0
+
+Copyright (c) 2026 Sangam Kumar Das. All rights reserved.
+
+1. SCOPE AND SUBJECT MATTER
+
+This license governs the standalone software source code, executable examples,
+test harnesses, fixtures, and original repository documentation supplied in this
+GitHub repository (the "Software"), except for material expressly identified
+as originating under a different license. This is a SOURCE-AVAILABLE license,
+not an Open Source Initiative (OSI)-approved open-source license.
+
+This license DOES NOT govern any separately published IETF Internet-Draft,
+underlying patent filings, patent claims, or third-party software. IETF
+Contributions are governed by their applicable IETF rules and IETF Trust
+Legal Provisions; this repository license does not alter those rights.
+
+2. LIMITED PERMISSION
+
+Subject to the restrictions below, the copyright holder grants each recipient
+a worldwide, royalty-free, non-exclusive, non-transferable, revocable-on-breach
+copyright license to:
+
+(a) read, inspect, and evaluate the Software and accompanying documentation;
+(b) download, copy, execute, debug, test, and modify the Software solely for
+    non-production research, education, reproducibility and security review;
+(c) create internal research reports, analyses and benchmark results that
+    acknowledge the project and do not misrepresent evaluation results;
+(d) share unmodified or modified copies for the same permitted purposes if
+    the copyright and license notices are retained, this license accompanies
+    the copies, modifications are clearly identified, and no broader license
+    is purportedly granted.
+
+An engineer working at a commercial company may READ this repository and run
+NON-PRODUCTION, INTERNAL TECHNICAL EVALUATIONS of its examples and tests,
+provided that doing so is not an operational deployment, a deliverable sold to
+a customer, a substitute for a commercial product or service, or a production
+integration. This limited permission is intended to permit independent
+technical examination by platform engineers and patent researchers.
+
+3. COMMERCIAL USE REQUIRES SEPARATE WRITTEN AUTHORIZATION
+
+Without express written permission from the copyright holder, a recipient may
+NOT:
+
+(a) deploy the Software in production or for a service involving real users,
+    customers, payments, confidential enterprise transactions, or physical
+    device effects;
+(b) incorporate Software code into a commercial product, commercially
+    distributed SDK, hosted service, customer deliverable, or revenue-generating
+    offering;
+(c) sell, sublicense commercially, rent, market, or distribute the Software
+    as part of a paid solution;
+(d) use the Software as an operational security gate for enterprise, cloud,
+    telecom, automotive, financial or other real-world effectuation;
+(e) represent the Software as vendor-certified, production-hardened, formally
+    verified, or compliant with an IETF standard merely because the code is
+    published.
+
+A different commercial license or evaluation agreement may be negotiated
+separately. No such license or agreement is implied by publication.
+
+4. PATENTS, TRADEMARKS AND OTHER RIGHTS
+
+No patent license, patent covenant not to sue, FRAND/RF commitment, patent
+exhaustion statement or waiver of patent claims is granted by this Software
+license. In particular, a copyright license to inspect or run the reference
+model must not be construed as authority to practice claimed inventions in a
+commercial product. Patent rights, if any, are governed by applicable law
+and any separately executed or properly declared patent licensing terms.
+
+No right is granted to use the inventor's name, project marks, or third-party
+trademarks to suggest sponsorship or endorsement.
+
+5. NOT AN IETF LICENSING DECLARATION
+
+This license is NOT an IETF IPR disclosure, does NOT amend an Internet-Draft,
+does NOT determine whether any patent is essential to an IETF specification,
+and does NOT set patent licensing terms for standards implementers. Any
+applicable patent-related disclosures must be handled separately through the
+IETF's IPR process (BCP 79 / RFC 8179). The Software is an independently
+published reference implementation and may be updated on a different schedule.
+
+6. REQUIRED NOTICES AND CHANGES
+
+Redistributed permitted copies must retain this license and the copyright
+notice. Modified copies must include a prominent description of what changed
+and must not imply that the inventor validated those modifications. Do not
+remove security limitations or falsely represent passing mock-model tests as
+security guarantees for deployed infrastructure.
+
+7. NO WARRANTY AND LIMITATION OF LIABILITY
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTIES OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE,
+NONINFRINGEMENT, SECURITY, OR FITNESS FOR USE IN SAFETY-CRITICAL SYSTEMS.
+TO THE MAXIMUM EXTENT ALLOWED BY APPLICABLE LAW, THE COPYRIGHT HOLDER IS NOT
+LIABLE FOR ANY LOSS, DATA EXPOSURE, CLAIMS OR DAMAGES ARISING FROM USE,
+MISUSE, INABILITY TO USE, OR RELIANCE ON THE SOFTWARE.
+
+8. TERMINATION; SURVIVAL
+
+Any license permission under this document terminates automatically upon a
+material breach. On termination, the recipient must stop using and
+redistributing the Software and remove unauthorized copies, except records
+that must be retained by applicable law. Restrictions, disclaimer, reservation
+of patent rights, and rights already vested in third parties under applicable
+law survive to the extent enforceable.
+
+9. GOVERNING LAW AND EXCEPTIONS
+
+Mandatory statutory rights, including rights that cannot lawfully be waived,
+are unaffected. This license should be reviewed by qualified counsel before
+being relied upon for commercial distribution or patent licensing decisions.
+
+For commercial permissions or patent licensing inquiries, contact the
+copyright holder through contact information published on their verified
+repository/profile. No contact address is invented in this document.

@@ -1,0 +1,14 @@
+[project]
+name = "das-finality-controlled-comparison"
+version = "0.1.0"
+description = "Falsifiable controlled comparison of upstream-only checks and sink-side validation for synthetic marketplace payment dispatch"
+requires-python = ">=3.10"
+authors = [{name = "Sangam Kumar Das"}]
+license = {file = "LICENSE"}
+
+[build-system]
+requires = ["setuptools>=65"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["finality_lab*"]
